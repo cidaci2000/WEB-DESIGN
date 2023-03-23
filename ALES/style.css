@@ -1,0 +1,76 @@
+body{
+    display: grid;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.2em;
+    font-style: arial;
+    color: beige;
+    background-image: linear-gradient(to right, rgba(178, 180, 185, 0), rgb(75, 109, 172));
+}
+
+.container {
+    background-size: contain;  
+    background-color: rgb(221, 221, 243);
+    border: 3px solid rgb(238, 231, 237);
+    padding: 2px;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: 300px auto auto auto;
+    grid-auto-rows: 200px 200px 150px 100px 100px 400px;
+    grid-template-areas: 
+        "h h h h"
+        "s c c c"
+        "s c c c"
+        "s c c c"
+        "f f f f"
+        "f f f f"
+     ;
+
+}
+
+.container div {
+    padding: 0.5px;
+    
+    
+}
+
+.header {
+    
+    grid-area: h;
+    background-image: linear-gradient(to right, rgba(178, 180, 185, 0), rgb(75, 109, 172));
+    display: flex;
+  font-size: 60px;
+  justify-content: space-around;
+  gap: 300px;
+     
+} 
+.im{
+    max-width: 100%;
+    overflow: hidden;
+
+}
+.div1{
+    height: 150px;
+    width: 150px;
+    
+}
+
+.sidebar {
+    background-image: linear-gradient(to right, rgba(178, 180, 185, 0), rgb(75, 109, 172));
+    grid-area: s;
+}
+
+.contest {
+    grid-area: c;
+    background: url(wey.jpg);
+    background-position: top 0.1px center;
+   background-repeat: no-repeat;
+   
+}
+
+.footer {
+    background-image: linear-gradient(to right, rgba(178, 180, 185, 0), rgb(75, 109, 172));
+    grid-area: f;
+    display: flex;
+
+}
