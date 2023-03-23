@@ -1,0 +1,111 @@
+body{
+    margin: 0 ;
+    padding: 0;
+    max-height:100%;
+    max-width:100%;
+    box-sizing: content-box;
+    background: linear-gradient(72deg, #3de88e 1%, #a57d96 99%);
+    
+       
+}
+
+.container {
+    background-size: contain;  
+    border: 3px solid rgb(238, 231, 237);
+    padding: 2px;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: auto auto auto 200px;
+    grid-auto-rows: 60px 200px auto 200px auto;
+    grid-template-areas: 
+        "h h h h"
+        "f f f f"
+        "c c c s"
+        "c c c s"
+        "c c c s"
+        
+     ;
+     
+}
+
+.container div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;       
+    height: 100%;
+}
+
+.header {
+    background: linear-gradient(72deg, #3de88e 1%, #a57d96 99%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-area: h;
+    display: flex;
+  
+     
+} 
+.b{
+    display: flex;
+}
+
+.fran{
+    color: rgb(3, 3, 3);
+    font-size: 45px;
+    margin: auto;
+    font-family: cursive;
+}
+
+.sidebar {
+    background-color: #df9fb4(250, 203, 225);
+    grid-area: s;
+    list-style: none;    
+}
+
+.contest {
+    grid-area: c;
+    background: url(fundo.jpg);
+    background-size: 100%; 
+    background-position: center;
+
+}
+.footer {
+    grid-area: f;
+    background: linear-gradient(72deg, #f098e6 1%, #9b8d96 99%);
+    
+   
+}
+
+li {
+    list-style: none; 
+    margin: 10px;    
+    
+}
+li a {
+    padding: 5px 10px; 
+    margin:0;
+    border: 0px solid rgb(191, 204, 9); 
+    background: rgb(141, 83, 115);
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+       
+}
+li a:hover {
+    background: #CCC;
+    color: #000; 
+    border-color: #000;
+        
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.slide{
+    border: 0px solid rgb(191, 204, 9);
+    gap: 2px;
+}
+ 
