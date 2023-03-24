@@ -16,14 +16,14 @@ body{
     display: grid;
     gap: 2px;
     grid-template-columns: 300px auto auto auto;
-    grid-auto-rows: 200px 200px 150px 100px 100px 400px;
+    grid-auto-rows: 90px 100px 150px 100px 100px 200px;
     grid-template-areas: 
         "h h h h"
         "s c c c"
         "s c c c"
         "s c c c"
         "f f f f"
-        "f f f f"
+        
      ;
 
 }
@@ -37,26 +37,27 @@ body{
 .header {
     
     grid-area: h;
-    background-image: linear-gradient(to right, rgba(178, 180, 185, 0), rgb(75, 109, 172));
+    background-color: #5e4ea5;
     display: flex;
-  font-size: 60px;
-  justify-content: space-around;
-  gap: 300px;
-     
+    font-size: 30px;
 } 
 .im{
-    max-width: 100%;
+    max-width: 80px;
+    max-height: 90px;
     overflow: hidden;
+    margin-left: 0%;
 
 }
-.div1{
-    height: 150px;
-    width: 150px;
-    
+h1{ text-align: center;
+    margin-top: 0.2px;
+    margin-left: 220px;
+
 }
+    
+
 
 .sidebar {
-    background-image: linear-gradient(to right, rgba(178, 180, 185, 0), rgb(75, 109, 172));
+    background-color: #5e4ea5;
     grid-area: s;
 }
 
@@ -67,10 +68,80 @@ body{
    background-repeat: no-repeat;
    
 }
-
 .footer {
-    background-image: linear-gradient(to right, rgba(178, 180, 185, 0), rgb(75, 109, 172));
     grid-area: f;
-    display: flex;
-
+    background: linear-gradient(72deg, #f098e6 1%, #9b8d96 99%);
+    
+   
 }
+
+li {
+    list-style: none; 
+    margin: 10px;    
+    
+}
+li a {
+    padding: 5px 5px; 
+    margin:0;
+    border: 0px solid rgb(191, 204, 9); 
+    background: rgb(25, 11, 58);
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+       
+}
+li a:hover {
+    background: #CCC;
+    color: #000; 
+    border-color: #000;
+        
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.slide{
+    border: 0px solid rgb(191, 204, 9);
+    gap: 2px;
+}
+
+
+
+li {
+    list-style: none; 
+    margin: 10px;    
+    
+}
+li a {
+    padding: 5px 10px; 
+    margin:0;
+    border: 0px solid rgb(191, 204, 9); 
+    background: rgb(12, 10, 121);
+    text-decoration: none;
+    color:#FFF;
+    /* cantos arredondados */
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+       
+}
+li a:hover {
+    background: #CCC;
+    color: #000; 
+    border-color: #000;
+        
+}
+#nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.slide{
+    border: 0px solid rgb(191, 204, 9);
+    gap: 2px;
+}
+ 
